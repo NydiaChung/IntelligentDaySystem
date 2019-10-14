@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="#009DD9"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- 返回键 -->
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left"
+        android:drawableLeft="@mipmap/ic_back_normal"
+        android:gravity="left|center_vertical"
+        android:minWidth="100dp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:text="返回"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="#FFFFFF" />
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center"
+        android:text=" 标题 "
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <!-- 主页键 -->
+    <TextView
+        android:id="@+id/tv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="15dp"
+        android:background="@null"
+        android:clickable="true"
+        android:drawablePadding="3dp"
+        android:gravity="right|center_vertical"
+        android:text="设置"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

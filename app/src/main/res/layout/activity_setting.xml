@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_root_padding"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_gas"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网关标识 : "/>
+        <EditText
+            android:id="@+id/Tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:layout_marginLeft="@dimen/view_gas"
+            android:layout_marginStart="@dimen/view_gas" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP  地  址:"/>
+
+        <EditText
+            android:text="api.nlecloud.com"
+            android:id="@+id/platformAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_gas"
+            android:maxLength="100"
+            android:hint="如:192.168.0.111" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_gas"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="平台端口:"/>
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_gas"
+            android:layout_marginStart="@dimen/view_gas"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="80"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_gas"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设  备  ID:"/>
+
+        <EditText
+            android:id="@+id/device_id_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_gas"
+            android:layout_marginStart="@dimen/view_gas"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="9969"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_gas"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="舵机X最小值:"/>
+
+        <EditText
+            android:id="@+id/angleX_min_text"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="0"/>
+
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="舵机X最大值:"/>
+
+        <EditText
+            android:id="@+id/angleX_max_text"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="180"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/view_gas"
+        android:orientation="horizontal">
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="舵机Y最小值:"/>
+
+        <EditText
+            android:id="@+id/angleY_min_text"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="15"/>
+
+        <TextView
+            android:textColor="@color/text_blue"
+            android:textSize="@dimen/text_size_18"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="舵机Y最大值:"/>
+
+        <EditText
+            android:id="@+id/angleY_max_text"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            android:text="60"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:background="@drawable/shape_login_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_gas"
+        android:text="保存"/>
+
+    <Button
+        android:id="@+id/cancle"
+        android:background="@drawable/shape_cancle_btn_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_gas"
+        android:text="取消"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">太阳能智能逐日系统</string>
+    <string name="app_title">逐日系统</string>
+    <string name="sensor_value">光照度</string>
+    <string name="lamp_close_state">路灯：关闭</string>
+    <string name="lamp_open_state">路灯：开启</string>
+    <string name="angle1_value">舵机X角度</string>
+    <string name="angle2_value">舵机Y角度</string>
+    <string name="switch_state">灯开关状态</string>
+    <string name="open_btn_text">开启</string>
+    <string name="close_btn_text">关闭</string>
+    <string name="left_btn_text">左移</string>
+    <string name="up_btn_text">上移</string>
+    <string name="right_btn_text">右移</string>
+    <string name="down_btn_text">下移</string>
+    <string name="steering_engine1">控制舵机X角度</string>
+    <string name="steering_engine2">控制舵机Y角度</string>
+    <string name="rotate">旋转</string>
+
+    <string name="error_response_frame_head">请求返回数据帧头错误</string>
+    <string name="error_response_getIlluminanceValue">获取当前光照度失败</string>
+    <string name="error_response_getSteeringEngineValue">获取当前舵机1/2角度失败</string>
+    <string name="error_response_controlSteeringEngine1Value">控制舵机1角度失败</string>
+    <string name="error_response_controlSteeringEngine2Value">控制舵机2角度失败</string>
+    <string name="error_response_openLamp">开灯失败</string>
+    <string name="error_response_closeLamp">关灯失败</string>
+    <string name="error_response_getLampState">获取灯状态失败</string>
+
+    <string name="success_response_getIlluminanceValue">获取当前光照度成功</string>
+    <string name="success_response_getSteeringEngineValue">获取当前舵机1/2角度成功</string>
+    <string name="success_response_controlSteeringEngine1Value">控制舵机1角度成功</string>
+    <string name="success_response_controlSteeringEngine2Value">控制舵机2角度成功</string>
+    <string name="success_response_openLamp">开灯成功</string>
+    <string name="success_response_closeLamp">关灯成功</string>
+    <string name="success_response_getLampState">获取灯状态成功</string>
+
+    <string name="about_message1">太阳智能逐日系统V1.0.0.0</string>
+    <string name="about_message2">版本所有©北京新大陆时代教育科技有限公司</string>
+    <string name="about_message3">NEWLAND Era Edu-H i-Tech(Beijing)Co.Ltd.</string>
+    <string name="about_message4">公司网址:http://www.newland-edu.com</string>
+    <string name="about_message5">如果你在使用过程中发现问题或要提意见:</string>
+    <string name="about_message6">请拨打电话</string>
+    <string name="about_message7">400-860-0591</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionName="1"
+    android:versionCode="v1.0.0.1"
+    package="com.newland.intelligentdaysystem">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".IntelligentDaySystemApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_solar_energy_256"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_solar_energy_256"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.Job2Activity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+    </application>
+
+</manifest>
